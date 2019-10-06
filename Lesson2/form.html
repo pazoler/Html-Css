@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Теги форм
+	</title>
+</head>
+<body>
+	<form action="#" method="psot"
+	enctype="multipart/form-data"> <!-- Для отправления файлов на сервер -- >
+		<!-- action - Обработчик данных формы -->
+		<!-- method - метод передачи данных формы -->
+		<!-- есть группировка поле формы -->
+		<fieldset> 
+				<!-- контейнер для группировки -->
+			<legend> текстовые поля (название)</legend>
+			<!-- филдсет в целом необязятелен -->
+			<label for="text1"> введите имя </label>
+			<!-- помещаем текст, который связан с инпутом, for text1 связывает с инпутом и подсвечивает -->
+			<input readonly="" type="text" name="#" id="text1" value="some text"> <!--stroch elem, text - однострочное текстовое поле disabled - нельзя использовать поле, атрибут value - атриббут чем изначально заполнить поле, атрибут информациии - надо стереть и свою вставить, readonly - нельзя стереть и свое ебощить-->
+			<input type="text" name="" placeholder="введите имя">
+			<!-- плэйсхолдер - так же заполняет поле - подсказка для пользователя-->
+			<br>
+			<label>введите e-mail</label>
+			<input required autofocus type="email" name="">
+			<!-- сообщаем типо хотим имэйл, доступны те же атрибуты, autofocus - сразу в это окно курсор, required - поле обязательны для заполнения - иначе отправлена форма отправлена не будет -->
+
+			<br>
+			<label for="psw">Введите пароль</label>
+			<input minlength="3" maxlength="9" type="password" name="" id="psw">
+			<!-- что бы скрыть вводимые символы, minlength="3" maxlength="9" чтобызадать длину пароля -->
+			<br>
+			<!-- текстовое поле для поиска -->
+			<input type="search" name="">
+
+			<input type="url" name="">
+			<!-- соответсвует ссылке для валидации url -->
+		</fieldset> 
+
+		<fieldset>
+			<legend>Загрузка файлов</legend>
+			<input type="file" multiple accept="image/*">
+			<!-- multiple - для загрузки не скольких файлов -->
+			<!-- accept - посмотреть дома, что можно загрузить, Доступен disabled, value, required -->
+		</fieldset>
+
+		<fieldset>
+			<legend>поля для ввода  чисел</legend>
+			<input type="number" name="" min="2" max="12" step="2">
+			<input type="range" name="" min="2" max="12">
+			<!-- (ползунок) -->
+		</fieldset>
+
+		<fieldset>
+			<legend>Чекбоксы и радиокнопки</legend>
+			<label><input checked type="checkbox" name=""> Чекбокс</label>
+			<!-- квадрат потверждение, checked - заранее ставит галочку-->
+			<br>
+			<label><input type="radio" name="">радиокнопка</label>
+			<!-- кругляш подтверждение, отметка не снимается -->
+		</fieldset>
+
+		<fieldset>
+			<legend> Группы радиокнопок </legend>
+
+			<label><input type="radio" name="rad"> Да</label>
+			<!-- при группировке радиокнопок нэйм одинаковый, из всех вариантов можно выбрать только один -->
+			<label><input type="radio" name="rad"> Нет</label>
+			<label><input type="radio" name="rad"> Не знаю</label>
+
+		</fieldset>
+		
+		<fieldset>
+			<legend> Группы чекбоксов</legend>
+
+			<label><input type="checkbox" name="ch[]">вариант1</label>
+			<!-- Группироквка чекбоксов нужна длясервера, [] - символ массива при группировке, обязателен -->
+			<label><input type="checkbox" name="ch[]">вариант2</label>
+			<label><input type="checkbox" name="ch[]">вариант3</label>
+		</fieldset>
+
+		<fieldset>
+			<legend> введите цвета/скрытое поле</legend>
+			<input type="color" name="">
+			<br>
+			<input type="hidden" name="" value="info">
+			<!-- встраиваем инфу, которую пользователь не должен видеть, возмоно позырить с вашей страницы или нет -->
+		</fieldset>
+
+		<fieldset>
+			<Label for="time"> Выбор времени </Label>
+			<!-- если включить библиотеку джава, то во всех браузерах будет одинаково -->
+			<input type="time" id="time" name="" min="14:00" max="21:00">
+
+			<label for="data"> выбор даты</label>
+			<input id="data" type="date" name="" min="2008-12-12">
+
+			<br>
+			<label for="datatime">И дата и время</label>
+			<input type="datetime-local" id="datatime" name="">
+
+			<br>
+
+			<label>выбор недели <input type="week" name=""></label>
+			
+			<!-- выбрать неделю (номер) -->
+			<label>выбор месяца <input type="month" name=""></label>
+
+		</fieldset>
+
+		<fieldset>
+			<LEGEND> кнопки (тег Input) </LEGEND>
+			<!-- кнопки для стереть/отправить и т.д -->
+			<input type="submit" name="" value="Отправить данные формы">
+			<input type="reset" name="" value="очистить поля">
+			<input type="button" name="">
+			<!-- просто кнопка -->
+			<input type="image" src="path_ti_pic" name="" alt="кнопка-картинка">
+		
+		</fieldset>
+
+		<fieldset>
+			<!-- кнопочки -->
+			<legend>конпка (тэг баттон)</legend>
+			<button type="submit"> Отправить</button>
+			<!-- не в value текст, а между тегами, все это Г стилизуется -->
+			<button type="reset">Очистить форму</button>
+			<button type="button"> просто кнопка</button>
+		</fieldset>
+		<!-- многострочное текстовое поле, до этого все было однострочным -->
+
+		<fieldset>
+			<legend>многострочное текстовое поле</legend>
+			<!-- доступны подсказка, автофокус, необходимо, блочить -->
+			<textarea placeholder="подсказка" cols="40" rows="10">
+				
+			</textarea>
+		</fieldset>
+
+		<fieldset>
+
+			<!-- раскрывающиеймя списки -->
+			<legend>раскрывающиеся списки</legend>
+			<select name="select" size="2" required="">
+				<!-- сайз 2 - увидим два списка в окошке
+				required - выбор должен быт ьсделан, даем имя и определяем вэлью варианту (не текст, а число) -->
+				<option value="1"> Элемент списка 1</option>
+				<option value="2" selected> Элемент списка 2</option>
+				<!-- selected - изначально выбрано в списке -->
+				<option value="3" disabled=""> Элемент списка 3</option>
+			</select>
+
+			<br>
+			<select name="select" multiple="">
+				<!-- multiple _для выбора нескольких вариантов -->
+				<optgroup label="Группа 1">
+					<!-- мы объединяем список в группу -->
+					<option value="1"> вариант 1</option>
+					<option value="2" selected> вариант 2</option>
+					<!-- selected - изначально выбрано в списке -->
+					<option value="3" disabled=""> вариант 3</option>
+				</optgroup>
+<!-- отрубать можем как группу, так опцию, так и весь список -->
+				<optgroup label="группа 2">
+					<!-- мы объединяем список в группу -->
+					<option value="1"> вариант 1</option>
+					<option value="2" selected> вариант 2</option>
+					<!-- selected - изначально выбрано в списке -->
+					<option value="3" disabled=""> вариант 3</option>
+				</optgroup>
+			</select>
+		</fieldset>
+		<!-- Дома - сделать форму с как можно большим количеством инпутов, везде подсказки, лэйблы привязаны к инпутам, селект, кнопки -->
+		<!-- Тег а - как ему указать, чтоб загрузил со страницы, а не перешел? -->
+		<!-- <a href="some" download="скачать"> -->
+		<!-- 	<table border="1"> rowspawn - будет занимать 2  столбца - colspan - 2 строки
+				<th> - ячейка заголовок
+				<tr> td /td</tr>
+			</table> -->
+	</form>
+</body>
+</html>

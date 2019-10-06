@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Форма личных данных</title>
+	<nav>
+		<ul>
+			<li><a href="#20">
+		 		В конец файла</a>
+		 	</li>
+			<li>
+				<a href="https://www.google.com/imgres?imgurl=https%3A%2F%2Fi.pinimg.com%2F736x%2F2d%2Fdc%2F25%2F2ddc25914e2ae0db5311ffa41781dda1.jpg&imgrefurl=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F841469511601378446%2F&tbnid=hl2St-n8U9-vyM&vet=12ahUKEwiSiuiulIjlAhXPL5oKHaHvDVAQMygHegUIARDwAQ..i&docid=bAbU8E1uLl7axM&w=690&h=1253&q=%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B8&ved=2ahUKEwiSiuiulIjlAhXPL5oKHaHvDVAQMygHegUIARDwAQ">
+				ссылка на картинку в интернете </a>
+			</li>
+		</ul>
+	</nav>
+</head>
+<body>
+	<h1 align="center">Регистрация</h1>
+	<form action="#" method="psot"
+	enctype="multipart/form-data">
+		
+		<fieldset>
+			<legend align="center">Данные пользователя</legend>
+			<label for="datafio">ФИО</label>
+				<input type="text" id="datafio" placeholder="Фамилия" required="" autofocus="">
+				<input type="text" id="datafio" placeholder="имя" required="">
+				<input type="text" id="datafio" placeholder="отчество">	
+			<br>
+			<label for="data">Дата рождения</label>
+			<input type="datetime-local" id="data">
+			<br>
+
+			<p> Образование
+			<select name="edu" id="">
+				<option value="1">Начальное</option>
+				<option value="2">Специальное</option>
+				<option value="3" selected="">Высшее</option>
+				<option value="4">Супервысшее</option>
+			</select>
+
+			<br>
+			<label for="pic">Вставьте фотографию</label>
+			<input type="file" multiple accept="image/*">
+
+			<br>
+				<p> Чего ожидаете от сайта 
+				<br>
+				<label><input type="checkbox" name="ch[]" value="1">Спорта</label>
+				<br>
+				<label><input type="checkbox" name="ch[]" value="2">Настроения</label>
+				<br>
+				<label><input type="checkbox" name="ch[]" value="3">Приключений</label>
+				<br>
+				<label><input type="checkbox" name="ch[]" value="4"> Самореализации</label>
+				<br>
+				Свой ответ 
+				<br>
+				<textarea name="ch[]" align="" placeholder="Свой ответ" cols="50" rows="5" value="5">
+				
+			</textarea>
+				</p>
+
+			<label for="char"> Выберите группу характеристик, своейственную Вам
+				<select name="select" id="char" multiple="">
+				<!-- multiple _для выбора нескольких вариантов -->
+				<optgroup label="Интроверт">
+					<!-- мы объединяем список в группу -->
+					<option value="11"> Спокойный</option>
+					<option value="12" selected> Обдуманный</option>
+					<!-- selected - изначально выбрано в списке -->
+					<option value="13"> Пассивный</option>
+				</optgroup>
+<!-- отрубать можем как группу, так опцию, так и весь список -->
+				<optgroup label="Экстраверт">
+					<!-- мы объединяем список в группу -->
+					<option value="14"> Энергичный</option>
+					<option value="15" selected> Активный
+					<!-- selected - изначально выбрано в списке -->
+					<option value="16"> Шумный</option>
+				</optgroup>
+			</select> </label>
+			</fieldset>
+			</p>
+			<h2 align="center">Контакты</h2>
+			<fieldset>
+				<label for="contact">Телефон/e-mail/соц.сети</label>
+				<input type="number" placeholder="введите телефон" maxlength="11"  required="" id="contact" size="11">
+				<input type="e-mail" placeholder="введите e-mail" required="" id="contact">
+				<input type="url" name="" value="url страницы соц сети" id="contact" size="40">
+
+				<br>
+
+				<label for="time"> когда можно звонить
+					<input type="time" min="00:00" max="23:00" id="time">
+				</label>
+				
+				<p>Хотите получать рассылку
+					<label for="">Да <input type="radio" name="ras"></label>
+					<label for="">Нет<input type="radio" name="ras"></label>
+					
+				</p>
+			</fieldset>
+		<br>
+		<fieldset>
+			<legend>Заключительный этап</legend>
+			<input type="submit" value="отправить данные">
+			<input type="reset" value="сбросить данные">
+			<br>
+			<button type="submit"> отправить данные</button>
+			<button type="reset">  сбросить данные</button>
+		</fieldset>
+	
+
+
+		
+	</form>
+	<footer>
+		<address id="20">
+			email@eamil.com
+		</address>
+	</footer>
+</body>
+</html>
