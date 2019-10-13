@@ -1,0 +1,77 @@
+nav {
+	position: relative;
+	left: 15%;
+}
+ul.menu > li
+	{
+		display: inline-block;
+	}
+
+.menu
+	{
+		width: 600px;
+		
+	}
+
+ul.menu a 
+	{
+		font-size: 20px;
+		height: 70px;
+		line-height: 70px;
+		margin-right: -5px;
+		border-top: 1px solid black;
+		border-bottom: 3px solid blue;
+		color: black;
+		padding: 5px;
+		background-color: none; 
+		text-decoration: none;
+
+		}
+body
+	{
+		background-image: url(../picture/pic1.jpg);
+		background-attachment: fixed; /*‘фиксированный’ фон не перемещается вместе с элементом.
+		scroll
+Позволяет перемещаться фону вместе с содержимым.*/
+		background-repeat: no-repeat; /*background-repeat: repeat-x;
+		background-repeat: space;
+		background-repeat: round;*/
+		background-position: left;
+		background-size: cover; /*cover - 
+		маштабирует как можно больше 
+		contain Масштабирует картинку так, чтобы она максимально накрыла собой весь блок.
+		можно масштабировать процентами*/
+		width: 800px;
+	}
+div.article {
+	
+	margin-left: 10px;
+	color: black;
+	font: 12pt/10pt sans-serif;
+	line-height: 1.5;
+}
+
+h2, h1 {
+	text-align: center;
+}
+
+p.author
+{
+	font-style:  italic;
+	text-align: center;
+	color: red;
+}
+
+div.image {
+	position: relative;
+	left: 25%;
+	text-align: center;
+	width: 350px;
+	box-shadow: 1px 1px 1px 1px #333; /*- тень блока, что бы задать тень картинки нужно картинку сделать background для тега div*/
+	margin-bottom: 5px;
+}
+
+div a:hover {
+	color: orange;
+
+}

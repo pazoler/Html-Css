@@ -1,0 +1,56 @@
+body {
+	margin: 0;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+header {
+	background: lightgrey;
+}
+
+header .container {
+	display: flex;
+	align-items: center; /*- будет по вертикали по центру*/
+	flex-wrap: wrap; /*- если не уместится, то будет переносится*/
+}
+
+header .login {
+	margin-left: auto;
+}
+
+header ul {
+	display: flex;
+	list-style-type: none;
+}
+
+header ul a {
+	padding: 7px 12px;
+	text-decoration: none;
+}
+
+header ul a:hover {
+	background: green;
+}
+
+.flex-row {
+	display: flex;
+	justify-content: space-around;
+	align-content: flex-end;
+	margin-bottom: 10px;
+}
+
+.flex-1 {
+	flex: 1;
+}
+.flex-2 {
+	flex: 2;
+	display: flex;
+	flex-direction: column;
+}
+
+.border {
+	border: 1px solid black;
+}

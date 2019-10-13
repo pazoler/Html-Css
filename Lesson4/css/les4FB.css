@@ -1,0 +1,78 @@
+.flex-container-1 div,
+.flex-container-2 div,
+.flex-container-3 div,
+.flex-container-4 div,
+.flex-container-5 div
+{
+	width: 100px;
+	height: 100px;
+	background: orangered;
+	border: 1px solid black;
+}
+/*выравнивание по горизонтали*/
+/*элементом может быть что угодно*/
+.flex-container-1 
+{
+	display: flex; /*- теперь стал флекс контейнером*/
+	background: lightgray;
+	/*justify-content: flex-start; элементы в начале
+	justify-content: flex-end;*/ /*элементы в конце*/
+	justify-content: center;
+
+	/*свободное место распределяется:;*/
+	/*justify-content: space-between;*/
+	justify-content: space-between;
+	justify-content: space-around; /*- занимает все равномерно на странице*/
+}
+/*свойство распространяется только на дочерний элемент, не потомков*/
+/*div:nth-child(2) - применим т.е. ко второму дочернему элементу*/
+.flex-container-2 div:nth-child(2) {
+	height: 200px;
+}
+
+/*выравнивание по вертикали - align-items: stretch;*/
+.flex-container-2 
+{
+	display: flex; /*- теперь стал флекс контейнером*/
+	background: lightgray;
+	align-items: stretch;
+	align-items: center; /*- выравинвание по центру, так же есть start, end*/
+	justify-content: center;/* - ещ по горизонтали*/
+}
+
+/*направление главной оси*/
+.flex-container-3 
+{
+	display: flex; /*- теперь стал флекс контейнером*/
+	flex-direction: row; /*flex-direction: row; - по умолчанию*/
+	/*flex-direction: row-reverse;*/ /*справа-налево, а не слева направо*/
+	flex-direction: column; /*- делает по вертикали*/
+}
+
+.flex-container-4 {
+	display: flex;
+	width: 300px;
+	background-color: lightgrey;
+	flex-wrap: nowrap; /*- переноса нет*/
+	flex-wrap: wrap; /*- могут переходить за пределы родительского контейнера*/
+	/*flex-wrap: wrap-reverse;*/
+
+}
+
+/*многострочное выравнивание*/
+.flex-container-5 {
+	display: flex;
+	/*как расположить элементы внутри контейнера*/
+	width: 250px;
+	background: lightgrey;
+
+
+	height: 1000px;
+	flex-wrap: wrap;
+	flex-direction: row;
+
+	justify-content: space-around; /*по середине в контейнере*/
+	align-content: flex-end; /*- в конце контейнера*/
+	/*align-content: center;*/
+	align-content: space-between; /*- делим все пространство*/
+}

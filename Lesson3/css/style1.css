@@ -1,0 +1,117 @@
+div {
+	width: 400px;
+	height: 200px;
+
+	margin: 20px; 
+	/*400 + 20 +20 ширина, 200 + 20 +20 высота*/
+	/*margin: 20px;  - со всех сторон
+	margin: 20px 30 рх; - верх-низ и лево-право
+	margin: 20px 30 рх 10 рх; верх потом лево-право потом низ
+	margin: 20px 30 рх 10 рх 15 рх; верх право низ лево*/
+	margin-top: 10px;
+	margin-left: 30px;
+	margin-right: 15px;
+	margin-bottom: 12px;
+
+	background: yellow;
+
+	padding: 30px;
+	/*внутренние отступы - теже правила, что и марлжин*/
+
+	/*border: ширина, тип рамки, цвет*/
+	border: 2px dashed green;
+	/*типы рамок позырить*/
+
+	
+	border-right: 1px solid orange;
+	border-bottom: 2px solid black;
+
+	border-radius: 50px
+	/*скругление углов*/
+	border-top-left-radius: 30px;
+	/*сначало верх или низ, потом или лево или право*/
+	}
+
+	/*делаем из блочного элемента строчный*/
+	.inline {
+		display: inline; /*будет строчным отображаться*/
+	}
+
+.block,
+.inline-block {
+	text-decoration: none;
+	color: orange;
+	padding: 10px;
+	/*позырить, как указывать цвета*/
+}
+/*тае можно стиль нескольким классам*/
+	.block {
+		display: block; /*элемент будет блочным*/
+	}
+
+	.inline-block {
+		display: inline-block; /*будет вести себя как блочно-строчный*/
+		/*можно давать размеры, но друг за другом*/
+	}
+
+	nav li {
+		list-style-type: none;
+		/*убирает свойство - в данном случае маркеры спсика
+		*/
+		/*display: none - просто скроем из вида*/
+		display: inline-block;
+		padding: 15px;
+		background: yellow;
+		/*дома сделат ьменю горизонтальным со ссылками - а рысширить*/
+	}
+
+body {
+	background-image: url("путь к картинке");
+	/*background-repeat: - свойство повторяемости изображения*/
+	/*зырить его свойства*/
+	/*background-position: -положение*/
+	/*background-attachment: fixed свойство зафиксировано*/
+	/*background-size: ; */
+}
+
+/*тень блока*/
+/*div {
+	box-shadow: [inset - тень внутри блока]
+	смещение по горизонтали относительно блока 
+				смещение по вертикали относительно блока
+				радиус размытия
+				растяжение
+				цвет
+
+}*/
+div {
+	box-shadow: 4px 3px 3px 3px brown; 
+	/*только 2 параметра обязательно*/
+}
+
+/*псевдоклассы*/
+a:link { /*епосещенная ссылка*/
+	background: red;
+}
+a:visited { /*посещенная ссылка*/
+	background: green;
+}
+a:focus { /*ссылки или элементы формы, на которые перешли с помощью мыши или TAB*/
+
+}
+
+.hover:hover {/* на кого наводишь, то что-то происходит (ccskrf bkb 'ktvtyn*/
+background: blue;
+}
+
+.active:active { /*в момент нажатия*/
+	background: orange;
+
+}
+/* псевдоклассы, относящиеся к элементам формы*/
+.elem:disabled - /*для стилизации заблокированных элементов формы*/
+.elem:anabled - /*для незаблокированных*/
+.elem:checked - /*для стилизации радиокнопок, чекбоксов, option*/
+/*разобраться с маргинами и паддингами - ДЗ*/
+/*схлопывание маргинов - если два элемента со своими марджинами схлопываются 30 и 15 не сложатся
+*/

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>подключение стилей/ css селекторы</title>
+	<style>
+		h2(color: blue; )
+	</style>
+	<!-- подключение файла со стилями -->
+	
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+	<!-- применяет стили по выбору элеммента, фиговый вариант т.к. применяется только к тегу. - не используем -->
+	<h1 style="color: red">Встраивание 
+	- подключение стилей через атрибут style</h1>
+	<h2>Вложение - подключение стилей через тег styke в теге head <!-- тоже не юзаем т.к. код получится длиннмы --></h2>
+	<h3>связывание - все стили в отдельном файлеерез тег link в теге head <!-- расширение - css и храним отдельно --></h3>
+	<div id="container">
+		<!-- стиль по id -->
+		
+	</div>
+	<p class="text-center">Lorem ipsum dolor sit amet.</p> <!-- lorem5 -->
+	<p>Lorem <span>ipsum dolor</span> sit amet.</p>
+	<!-- дочерний - когда вложен в другой тег -->
+
+	<div>
+		<p>
+		Lorem ipsum <span> dolor sit amet,</span> consectetur.
+		</p>
+	</div>
+
+	<div>
+		<p class="green">lorem <a href="#">
+			sit amet.
+		</a> ipsum dolor
+	</p>
+	</div>
+
+	<div>
+		<p class="brown">lorem <a href="#">
+			sit amet.
+		</a> ipsum dolor
+	</p>
+	</div>
+
+	<div class="inherit-1">
+		Lorem ipsum dolor sit amet
+		<p>Asperiores ab sapiente, doloremque soluta!</p>
+		<p>Voluptas beatae dolorem ad, nulla!</p>
+	</div>
+
+	<h5 class="some-class" id="some_id">
+		специфичность
+	</h5>
+
+</body>
+</html>
+
