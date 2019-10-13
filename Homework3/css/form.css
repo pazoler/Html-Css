@@ -1,0 +1,51 @@
+ul > li {
+	display: inline-block;
+	padding: 30px;
+	text-decoration: none;
+}
+
+li a:hover {
+	color:black;
+}
+
+body {
+	width: 800px;
+	background-color: honeydew;
+}
+
+.datafield {
+	background-image: url(../picture/pic1.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+textarea {
+
+	background-color: thistle;
+}
+
+.education 
+{
+	font-style: oblique;
+}
+
+label 
+{
+	color: navy;
+}
+
+button {
+	background-color: orange;
+}
+
+h1, h2 {
+	text-align: center;
+	text-decoration: underline;
+}
+.radio:checked 
+{
+	width: 22px;
+	height: 22px;
+	border: 1px solid red;
+  	
+}
