@@ -1,74 +1,49 @@
 body {
-	margin: 0;
-}
-
-.container {
-	max-width: 1200px;
-	margin: 0 auto;
-}
-
-header {
-	background: lightgrey;
-}
-
-header .container {
-	display: flex;
-	align-items: center; /*- будет по вертикали по центру*/
-	flex-wrap: wrap; /*- если не уместится, то будет переносится*/
-}
-
-header .login {
-	margin-left: auto;
-}
-
-header ul {
-	display: flex;
-	list-style-type: none;
-}
-
-header ul a {
-	padding: 7px 12px;
-	text-decoration: none;
-}
-
-header ul a:hover {
-	background: green;
-}
-
-.flex-row {
-	display: flex;
-	justify-content: space-around;
-	align-items: stretch;
-	flex-basis: auto;
-	flex-grow: auto;
-		}
-
-.flex-1 {
-	flex: 30;
-	display: flex;
-	flex-direction: column;
-	align-items: stretch;
-
-}
-.flex-2 {
-	flex: 70;
-	display: flex;
-	flex-direction: column;
-	align-items: stretch;
-	min-height: 100px;
+	margin:0;
+	padding:0;
 }
 
 .border {
 	border: 1px solid black;
+	padding: 10px;
 }
 
-.image {
-	background: green;
-	}
-.boxlt	{
-	flex: 36;
+.flex {
+	display: flex;
+}
+.flex1 {
+	flex: 1;
+}
+
+.flex2 {
+	flex: 2;
+}
 
 }
-.boxbl {
-		flex: 34;
+.right {
+	background: lightgreen;
+	padding: 10px;
+	margin: 5px;
+}
+.column {
+	flex-direction: column;
+}
+.background {
+	height: 100px;
+	background: lightblue;
+}
+
+.background1 {
+	background: yellow;
+	height: 100px;
+}
+
+.right1 {
+	justify-content: space-between;
+}
+
+.right2 {
+	background: lightgreen;
+	padding: 10px;
+	margin: 5px;
 }

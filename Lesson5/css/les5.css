@@ -1,0 +1,73 @@
+
+div {
+	border: 1px solid black;
+}
+
+.none {
+	display: none; /*элемент будет скрыт и место не остается*/
+}
+
+.hidden {
+	visibility: hidden; /*элемент скрывается, но место остается*/
+}
+
+#parent :first-child { /*первый дочерний элемент*/
+	background: orange;
+}
+#parent :last-child { /*последний дочерний элемент*/
+	background: green;
+}
+#parent :nth-child(3) { /*к какому элементу будут применяться стили*/
+	background: blue;
+}
+#parent :nth-child(odd) { /*четные элементы или even - нечетные*/
+	border-bottom: 3px solid red;
+}
+
+#target {
+	width: 300px;
+	height: 100px;
+	background: red; /*rgba - делает прозрачным только этот элемент*/
+	opacity: 0.7; /*прозрачност - наследуемое свойствоь*/
+}
+
+#target:target /*(только к айди перейти можно)*/
+{
+	opacity: 1;
+	background: blue;
+}
+
+ul {
+	list-style-type: none;
+}
+
+li::before { /*(без пробелов)*/
+	content: "*";
+	color: orangered;
+
+}
+
+.image::before {
+	content: "";
+	height: 50px;
+	width: 50px;
+	display: inline-block;
+	margin: 3px;
+	background-image: url(../../Homework3/picture/pic2.jpg);
+	background-size: cover;
+	vertical-align: middle;
+	border-radius: 50%;
+
+}
+/*форматирование кавычек*/
+p {
+	quotes: '"' '>';
+}
+
+p::before {
+	content: open-quote;
+}
+p::after {
+	content: close-quote;
+}
+/*админская часть - на фрэймфорке */

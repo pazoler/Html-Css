@@ -2,46 +2,33 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Title</title>
+	<title>Document</title>
 	<link rel="stylesheet" href="css/hw4.css">
 </head>
 <body>
-	<header>
-		<div class="container">
-			<img src="../Homework3/picture/pic1.jpg" alt="" width="60" height="60">
-			<nav>
-				<ul>
-					<li><a href="">Главное</a></li>
-					<li><a href="">О нас</a></li>
-					<li><a href="">контакты</a></li>
-				</ul>
-			</nav>
-			<a href="" class="login">Войти</a>
-		</div>
-	</header>
-
-<!-- что бы элемент занимал 2/3 и 1/3, например -->
-	<div class="flex-row">
-		<div class="flex-2 border">
-			<div class="border boxlt image">Первый</div>
-			<div class="border boxlt">Второй</div>
-			<div class="border flex-row">
-				<div class="border flex-row boxbl">
-					<div class="image">Для изображения</div>
-				<br>1
+	<div class="flex border">
+		<div class="flex2 border column"> <!-- колонка слева 2 / 3 -->
+			<div class="flex1 border column"> <!-- фон и ниже текст -->
+				<div class="flex1 background"></div>
+				<div class="flex1 border">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam velit deleniti quia praesentium obcaecati numquam adipisci, magnam ad cum reiciendis eveniet veniam, culpa animi commodi id tempore quisquam illum deserunt sapiente voluptatum itaque atque, beatae a. Quidem architecto hic maiores accusantium excepturi unde, sed ex at distinctio debitis! Quod, ab!</div>
+			</div>
+			<div class="flex border"> <!-- линия с двумя колонками и внутри еще по 2 флекса (колонки) -->
+				<div class="flex1 flex column border background">
+					<div class="flex1 column border background1"></div>
+					<div class="flex1 column">Lorem ipsum.</div>
 				</div>
-				<div class="border flex-row boxbr">
-					<div class="image">Для изображения</div>
-				<br>2
-			</div>
+				<div class="flex1 flex column border background">
+					<div class="flex1 column border background1"></div>
+					<div class="flex1 column">Lorem ipsum dolor sit.</div>
+				</div>
 			</div>
 		</div>
-		<div class="flex-1 border">
-			<div class="flex4right border">Текст</div>
-			<div class="flex4right border">Текст</div>
-			<div class="flex4right border">Текст</div>
-			<div class="flex4right border">Текст</div>
-	</div> <!-- - назначено 2 класса -->
+		<div class="flex1 flex border column right1"> <!-- колонка справа 1/3 -->
+			<div class="flex1 right2 border">Lorem ipsum dolor sit amet.</div>
+			<div class="flex1 right2 border">Unde, placeat. Expedita inventore, illo.</div>
+			<div class="flex1 right2 border">Incidunt totam laboriosam impedit, odit?</div>
+			<div class="flex1 right2 border">Optio sequi praesentium cumque fugiat.</div>
+		</div>
 	</div>
 </body>
 </html>
