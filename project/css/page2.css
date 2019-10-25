@@ -1,0 +1,309 @@
+body {
+    margin: 0;
+    font-family: Palatino, URW Palladio L, serif
+    ;
+    font-size: 16px;
+    color: #333333;
+    background: #FFF8DC;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+p {
+	word-break: all;
+	word-wrap: break-word;
+}
+
+.column {
+	flex-direction: column;
+}
+.border {
+border: 1px solid black;
+}
+
+.block {
+	display: block;
+}
+
+
+.flex {
+	display: flex;
+}
+
+.flex-1
+{
+	flex: 1;
+}
+
+.flex-2
+{
+	flex: 2;
+}
+
+.flex-3
+{
+	flex: 3;
+}
+
+.flex-4
+{
+	flex: 4;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.ai-center {
+	align-items: center;
+}
+
+.container {
+	max-width: 1200px;
+    margin: 5px auto;
+}
+
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+
+div.container {
+	align-items: center;	
+	color: 	white;
+	max-width: auto;
+	margin: 0 auto;
+	}
+div.container img{
+	border-radius: 10px;
+	size: 30%;
+}
+header .contacts{
+    background: #708090;
+    opacity: 0.9;
+    justify-content: space-around;
+}
+
+header .container {
+	justify-content: space-around;
+    align-items: center;
+    padding: .6em;
+}
+
+
+
+.background1 {
+	background: #C0C0C0;
+	margin: 0;
+	padding: 0;
+	opacity: 0.9;
+}
+
+div.name {
+	font-family: Mistral;
+	font-size: 2em;
+}
+
+header div a {
+	color: 	white;
+}
+
+.entry::after {
+content: "  /  ";
+margin: 0;
+padding: 0;
+}
+
+/*Теперь вторая строка хэдера с логотипом, поиском и картинкой корзины*/
+	
+div.up2 {
+	padding: 0;
+}		
+
+div.up2 :nth-child(2) {
+		
+		text-align: center;
+		word-wrap: break-word;
+}
+div.up2 :nth-child(3) {
+		
+		text-align: left;	
+}
+div.up2 input {
+	width: 70%;
+}
+
+
+/*Теперь третья строка хэдера*/
+
+
+fieldset {
+	border: 0;
+}
+
+input {
+	padding: 3px;
+	margin: 5px;
+}
+
+fieldset input {
+	display: block;
+	flex-wrap: nowrap;
+
+}
+
+aside div {
+	display: block;
+	margin: 5px;
+}
+aside label {
+	display: block;
+	margin: 0;
+}
+aside p input {
+	display: inline;
+}
+
+.foot {
+	width: 30%;
+    background: #f4f4f4;
+    margin: 1em 1em;
+    text-align: center;
+}
+
+div.foot div {
+	padding: 1em;
+}
+
+.foot-head {
+	font-weight: bold;
+}
+
+.footer1 {
+justify-content: center;
+}
+
+footer {
+	margin: 0;
+	padding: 0;
+	background-color: #FFF8DC;
+}
+
+a:hover {
+	color: orange;
+}
+
+table {
+	width: 90%;
+	height: 50%;
+	padding: 0;
+	
+
+}
+
+th {
+	width: 30%;
+}
+
+table, th, td, tr {
+	border: 1px solid black;
+	margin: 0;
+}
+
+th, td, tr {
+	border: 1px solid black;
+	margin: 0;
+	padding: 10px;
+
+}
+
+@media screen and (max-width: 480px) {
+
+    body {
+        font-size: 19px;
+    }
+    p.address    
+    {
+        display: none;
+    }
+   
+    p.phone {
+    	flex: 4;
+    }
+
+    p.game-page
+    {
+    	flex: 3;
+    	font-size: 15px;
+    }
+    aside.right
+     {
+    	display: none;
+    }
+
+    main div {
+    	word-wrap: break-word;
+    	word-break: break-all;
+        }
+
+    main {
+    	flex: 4;
+    }
+
+    aside.left {
+    	flex: 1;
+    }
+    table {display: none;}
+  
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 770px) {
+    
+	
+	body {
+		font-size: 18px;
+	}
+	p.address    
+    {
+        display: none;
+    }
+
+    aside.right {
+    	display: none;
+    }
+     main div {
+    	word-wrap: break-word;
+    	word-break: break-all;
+        }
+
+   
+}
+
+@media screen  and (min-width: 771px) and (max-width: 960px) {
+    
+    body {
+		font-size: 19px;
+	}
+
+		
+
+    }
+

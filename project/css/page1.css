@@ -1,0 +1,383 @@
+
+body {
+    margin: 0;
+    font-family: Palatino, URW Palladio L, serif
+    ;
+    font-size: 16px;
+    color: #333333;
+    background: #FFF8DC;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+p {
+	word-break: all;
+	word-wrap: break-word;
+}
+
+.border {
+border: 1px solid black;
+}
+
+.block {
+	display: block;
+}
+
+
+.flex {
+	display: flex;
+}
+
+.flex-1
+{
+	flex: 1;
+}
+
+.flex-2
+{
+	flex: 2;
+}
+
+.flex-3
+{
+	flex: 3;
+}
+
+.flex-4
+{
+	flex: 4;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.ai-center {
+	align-items: center;
+}
+
+.container {
+	max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+
+div.container {
+	align-items: center;	
+	color: 	white;
+	max-width: auto;
+	margin: 0 auto;
+	}
+div.container img{
+	border-radius: 10px;
+	size: 30%;
+}
+header .contacts{
+    background: #708090;
+    opacity: 0.9;
+}
+
+header .container {
+	justify-content: space-around;
+    align-items: center;
+    padding: .6em;
+}
+
+
+.background1 {
+	background: #C0C0C0;
+	margin: 0;
+	padding: 0;
+	opacity: 0.9;
+}
+
+div.name {
+	font-family: Mistral;
+	font-size: 2em;
+}
+
+header div a {
+	color: 	white;
+}
+
+.entry::after {
+content: "  /  ";
+margin: 0;
+padding: 0;
+}
+
+/*Теперь вторая строка хэдера с логотипом, поиском и картинкой корзины*/
+	
+div.up2 {
+	padding: 0;
+}		
+
+div.up2 :nth-child(2) {
+		
+		text-align: center;
+		word-wrap: break-word;
+}
+div.up2 :nth-child(3) {
+		
+		text-align: left;	
+}
+div.up2 input {
+	width: 70%;
+}
+
+
+/*Теперь третья строка хэдера*/
+
+
+#slider li {
+	display: none;
+	position: relative;
+}
+#slider li.active {
+	display: block;
+}
+
+#slider ul {
+	padding: 0; /*- убрали сверху и слева лишние пробелы*/
+	margin: 0;
+}
+#slider ul p {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+
+#slider li img {
+	height: 40vh; /* задаем высоту картинке*/
+}
+
+/*центральная часть - меню текст и коробки*/
+
+
+
+.menu a {
+	background: #708090;
+	color: #fff;
+	padding: 10px;
+	display: block;
+	transition: 0.2s;
+}
+
+
+.menu a:hover {
+	background: #666;
+	padding: 10px 0 10px 20px;
+}
+
+
+.menu_list {
+	position: relative;
+}
+
+.menu_drop {
+	position: absolute;
+	width: 100%;
+	left: 100%;
+	top: 0;
+	opacity: 0;
+}
+
+.menu_list:hover .menu_drop {
+	opacity: 1;
+}
+
+
+.menu li:first-child a,
+.menu li .menu_drop li:first-child a
+{
+	border-radius: 3px 3px 0 0; /*- для скругления краев*/
+}
+
+.menu li:last-child a,
+.menu li .menu_drop li:last-child a
+{
+	border-radius: 0px 0px 3px 3px; /*- для скругления краев*/
+	border-bottom: 0;
+}
+
+/*иконки для всплывающих менюшек*/
+
+.menu_list::after {
+	content: "\21D2";
+	color: white;
+	position: absolute;
+	top: 1em;
+	right: 0.7em;
+	transition: 0.3s;
+}
+
+.menu_list:hover::after {
+	transform: scale(1.4);
+}
+
+aside {
+	background: #FFFFE0;
+
+}
+
+/*Для части main*/
+
+main {
+	background: #FFFFE0;
+}
+
+
+.merch {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    margin: 0 auto;
+    
+   }
+.item {
+    width: 21%;
+    flex-direction: row;
+    box-sizing: border-box;
+    background: #f4f4f4;
+    margin: 1em 0;
+}
+
+
+.item p {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-align: justify;
+	height: 35%;
+}
+
+.item a {
+	display: block;
+	height: 15%;
+}
+.item img {
+	height: 40%;
+}
+
+div.head {
+	display: block;
+	text-align: center;
+	font-size: 2.5em;
+	font-family: Сomic Sans MS;
+	background-color: #C0C0C0;
+	opacity: 0.9;
+}
+
+
+a:hover {
+	color: orange;
+}
+
+.foot {
+	width: 30%;
+    background: #f4f4f4;
+    margin: 1em 1em;
+    text-align: center;
+}
+
+div.foot div {
+	padding: 1em;
+}
+
+.foot-head {
+	font-weight: bold;
+}
+
+footer {
+	margin: 0;
+	padding: 0;
+	background-color: #FFF8DC;
+}
+
+@media screen and (max-width: 480px) {
+
+    body {
+        font-size: 19px;
+    }
+    p.address    
+    {
+        display: none;
+    }
+   
+    p.phone {
+    	flex: 5;
+    }470
+
+    p.game-page
+    {
+    	flex: 3;
+    	font-size: 15px;
+    }
+    aside {
+    	display: none;
+    }
+    .flex-xs-column {
+        flex-direction: column;
+       }
+
+     .item {
+     	width: 80%;
+     	margin: 5px auto;
+     }
+  
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 770px) {
+    
+	
+	body {
+		font-size: 18px;
+	}
+	p.address    
+    {
+        display: none;
+    }
+
+    aside {
+    	display: none;
+    }
+
+    .item {
+       width: 45%;
+		}
+
+}
+
+@media screen  and (min-width: 771px) and (max-width: 960px) {
+    
+    body {
+		font-size: 19px;
+	}
+
+	.item {
+		width: 47%;
+	}
+	
+
+    }

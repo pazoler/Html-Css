@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Admin page</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+</head>
+<body>
+	<div class="container-fluid">
+	<h2 class="text-center">Админская часть</h2>
+	<div class="row">
+		<div class="col-md-12 border">
+			<form action="">
+			<div class="form-group">
+			<label for="name">Введите название игры</label>	
+				<input class="form-control" type="text" id="number_min" placeholder="Название игры" required="">
+			<label for="number_min">Минимальное число игроков</label>
+				<input type="number" placeholder="min" maxlength="2"  required="" id="number_min" size="2">
+			<label for="number_max">Максимальное число игроков</label>
+				<input type="number" placeholder="max" maxlength="2"  required="" id="number_max" size="2">
+			<div class="input-group mb-3">
+  				<div class="input-group-prepend">
+    				<span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
+ 				</div>
+  				<div class="custom-file">
+    				<input type="file" multiple accept="image/*" class="custom-file-input" id="image" aria-describedby="inputGroupFileAddon01">
+    				<label class="custom-file-label" for="image">Choose image</label>
+  				</div>
+			</div>
+			<div class="input-group">
+  				<div class="input-group-prepend">
+    				<span class="input-group-text">Описание товара</span>
+  				</div>
+  				<textarea class="form-control" aria-label="With textarea"></textarea>
+			</div>
+			<label for="articul">Артикул</label>	
+				<input class="form-control" type="text" id="articul" placeholder="Артикул" required="">
+			<div class="form-group">
+    			<label for="genre">Выберите жанры игры </label>
+    			<select multiple class="form-control" id="genre">
+      				<option value="1">Cтратегия</option>
+      				<option value="2">Для вечеринок</option>
+     				<option value="3">Подойдет детям</option>
+      				<option value="4">Быстрые и простые</option>
+      				<option value="5">Семейные</option>
+    			</select>
+  			</div>
+			<input class="btn btn-primary" type="submit" value="Accept">
+			<input class="btn btn-secondary" type="reset" value="Сбросить данные">
+			<button type="submit" class="btn btn-danger">Удалить с сайта </button>
+		</div>
+		</form>
+		</div>
+	</div>
+	
+	</div>
+</body>
+</html>

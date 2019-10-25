@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Запись на игру</title>
+	<link rel="stylesheet" href="css/page2.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<header>
+		<div class="contacts">
+		<div class="flex container">
+			<p class="game-page"><a href="page1.html" >Берем игры</a></p>
+			<p class="address"><a href="">Адрес местоположения</a></p>
+			<!-- узнать, как привязать геоданные -->
+			<p class="phone">
+				+7(952)097-87-11 <span>Заказать звонок</span>
+			</p>
+		</div>
+		</div>
+
+		<div class="background1">
+		<div class="up2 flex container">
+			<div class="flex-1 logo">
+				<img src="picture/logo1.jpg" alt="">
+			</div>
+			<div class="flex-2 name">Nastolkey.ru</div>
+			<div class="flex-3">
+				<input type="search" placeholder="Поиск по сайту">
+			</div>
+			<div class="flex-1">Корзина</div>
+		</div>
+		</div>
+	</header>
+	
+	<div class="flex border">
+		<aside class="flex-1 left">
+			<form action="">
+			<fieldset>
+			<legend align="center">Данные для записи</legend>
+			<label for="sourname">Введите фамилию</label>
+				<input type="text" id="sourname" placeholder="Фамилия" required="" autofocus="">
+			<label for="name">Введите имя</label>	
+				<input type="text" id="name" placeholder="Имя" required="">
+			<label for="contact">Номер телефона</label>
+				<input type="tel" placeholder="+7***" maxlength="12"  required="" id="contact" size="11">
+			<label for="email">Email</label>
+				<input type="email" placeholder="введите e-mail" required="" id="email">
+				
+				<p>Хотите получать рассылку
+					<label for="">Да <input type="radio" name="ras"></label>
+					<label for="">Нет<input type="radio" name="ras"></label>
+				</p>
+			<p> Выберите игру
+			<select name="game" id="">
+				<option value="1">Хару Ичибан</option>
+				<option value="2">Антимонополия</option>
+				<option value="3" selected="">Photosynthesis</option>
+				<option value="4">Otys</option>
+				<option value="5">Magic the Gathering</option>
+			</select>
+
+			<input type="submit" value="отправить данные">
+			<input type="reset" value="сбросить данные">
+			</fieldset>
+			</form>
+		</aside>
+		<main class="flex-4 container flex column">
+		<div>Доброго дня!
+			Мы собираемся поиграть вместе и отлично провести время. Если у тебя есть сомнения по-поводу настольных игр, то это отличная возможность все решить для себя.
+			Приходите, будет весело!
+			Игры проводятся по воскресеньям.
+		</div>
+		<div>
+		<table>
+			<tr>
+				<th>Место сбора</th>
+				<th>Игра</th>
+				<th>Дата/время</th>
+			</tr>
+			<tr>
+				<td>Freak-zone</td>
+				<td>27.10.2019</td>
+				<td>Magic the Gathering</td>
+			</tr>
+			<tr>
+				<td>Типичный Питер</td>
+				<td>3.11.2019</td>
+				<td>Otys</td>
+			</tr>
+			<tr>
+				<td>Циферблат</td>
+				<td>10.11.2019</td>
+				<td>Антимонополия</td>
+			</tr>
+		</table>
+		</div>
+			
+				
+		</main>
+		<aside class="flex-1 flex column right">
+			<p>Информация по последним играм</p>
+			<div>13.10.2019: Играли в "Драконы и подземелья"
+			по адресу:1</div>
+			<div>06.10.2019: Играли в "Драконы и подземелья"
+			по адресу:2</div>
+			<div>31.09.2019: Играли в "Драконы и подземелья"
+			по адресу:2</div>
+		</aside>
+	</div>
+
+	<footer class="flex container footer1">
+		<div class="foot border">
+			<div class="foot-head">Покупателям</div>
+			<div class="foot-nonhead"><a href="">Помощь</a></div>
+			<div class="foot-nonhead"><a href="">Подобрать игру</a></div>
+		</div>
+		<div class="foot border">
+			<div class="foot-head">Доставка и оплата</div>
+			<div class="foot-nonhead"><a href="">Способы оплаты</a></div>
+			<div class="foot-nonhead"><a href="">Адреса магазинов</a></div>
+		</div>
+	</footer>
+</body>
+</html>
